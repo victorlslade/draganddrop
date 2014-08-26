@@ -24,7 +24,7 @@ if __name__ == "__main__":
     pg.init()
     Screen = pg.display.set_mode((640, 480))
     MyClock = pg.time.Clock()
-    MyPlayer = character.Character((0, 0, 150, 30))
+    MyPlayer = character.Character((0, 0, 30, 30))
 
     #MyPlayer.rect.center = Screen.get_rect().center
     while 1:
