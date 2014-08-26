@@ -1,4 +1,6 @@
 
+#character.Character
+
 import pygame as pg #lazy but responsible (avoid namespace flooding)
 
 class Character:

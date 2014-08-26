@@ -1,5 +1,6 @@
 import os,sys
 import pygame as pg #lazy but responsible (avoid namespace flooding)
+# character.py in this directory? a module?
 import character
 
 
