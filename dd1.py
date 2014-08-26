@@ -1,16 +1,8 @@
 import os,sys
 import pygame as pg #lazy but responsible (avoid namespace flooding)
+import character
 
-class Character:
-    def __init__(self,rect):
-        self.rect = pg.Rect(rect)
-        self.click = False
-        self.image = pg.Surface(self.rect.size).convert()
-        self.image.fill((255,0,0))
-    def update(self,surface):
-        if self.click:
-            self.rect.center = pg.mouse.get_pos()
-        surface.blit(self.image,self.rect)
+
 
 def main(Surface,Player):
     game_event_loop(Player)
@@ -31,8 +23,8 @@ if __name__ == "__main__":
     pg.init()
     Screen = pg.display.set_mode((1000,600))
     MyClock = pg.time.Clock()
-    MyPlayer = Character((0,0,150,30))
-    MyIcon = Character((300,0,150,30))
+    MyPlayer =character.Character((0,0,150,30))
+    MyIcon = character.Character((300,0,150,30))
 
     #MyPlayer.rect.center = Screen.get_rect().center
     while 1:
